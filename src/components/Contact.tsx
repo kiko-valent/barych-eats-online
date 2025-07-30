@@ -81,9 +81,11 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">Dirección</h3>
-                    <p className="text-muted-foreground">[Por completar por el cliente]</p>
+                    <p className="text-muted-foreground">Barych Bistro, Carrer de ses Moreres, 19, 07702 Mahón, Balearic Islands</p>
                     <a 
-                      href="#" 
+                      href="https://www.google.com/maps/search/?api=1&query=Barych+Bistro%2C+Carrer+de+ses+Moreres%2C+19%2C+07702+Mah%C3%B3n%2C+Balearic+Islands" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
                       className="text-primary hover:underline text-sm"
                     >
                       Ver en mapa
@@ -194,12 +196,18 @@ const Contact = () => {
               <CardHeader>
                 <CardTitle>Nuestra Ubicación</CardTitle>
               </CardHeader>
-              <CardContent className="p-0">
-                <div className="w-full h-64 bg-muted rounded-b-lg flex items-center justify-center">
-                  <div className="text-center text-muted-foreground">
-                    <MapPin className="w-12 h-12 mx-auto mb-2" />
-                    <p>Mapa de Google Maps</p>
-                    <p className="text-sm">(Se insertará cuando se complete la dirección)</p>
+              <CardContent className="p-0 flex-grow">
+                <div className="rounded-b-lg overflow-hidden h-full">
+                  <div className="text-center text-muted-foreground h-full">
+                    <iframe
+                      src="https://maps.google.com/maps?q=Barych%20Bistro%2C%20Carrer%20de%20ses%20Moreres%2C%2019%2C%2007702%20Mah%C3%B3n%2C%20Balearic%20Islands&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                      width="100%"
+                      height="100%"
+                      style={{ border: 0 }}
+                      allowFullScreen={true}
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                    ></iframe>
                   </div>
                 </div>
               </CardContent>

@@ -100,7 +100,8 @@ const Testimonials = () => {
           <p className="text-lg text-muted-foreground mb-6">
             ¿Quieres ser el próximo en compartir tu experiencia?
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="https://www.google.com/search?sa=X&sca_esv=27b91714de888794&tbm=lcl&sxsrf=AE3TifPXktuQGB3yWP3y9oAgvWNqeEJXrA:1753879792827&q=Barych+Bistro+Rese%C3%B1as&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIxNDEyMDc2NrI0NDYxMjUBkiaGGxgZXzGKOSUWVSZnKDhlFpcU5SsEpRanHt6YWLyIFYcEAHYngXhNAAAA&rldimm=14207332913425413441&hl=es-ES&ved=2ahUKEwii3Z6wz-SOAxXdVqQEHegmIN8Q9fQKegQIUhAF&biw=1527&bih=874&dpr=2.2#lkt=LocalPoiReviews" target="_blank" rel="noopener noreferrer" className="block w-full max-w-sm mx-auto">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Card className="bg-primary/5 border-primary/20 p-6 max-w-md">
               <CardContent className="p-0 text-center">
                 <div className="text-3xl font-bold text-primary mb-2">4.8/5</div>
@@ -115,7 +116,8 @@ const Testimonials = () => {
                 </div>
               </CardContent>
             </Card>
-          </div>
+            </div>
+            </a>
         </div>
       </div>
     </section>
